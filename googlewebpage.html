@@ -51,8 +51,50 @@
         top: 190px;
         left: 600px;
     }
-    #name {
+    #search {
         width: 420px;
+        border-radius: 50%;
+        height: 100px;
+    }
+    .navbar {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 30px;
+        background-color: gray;
+    }
+    .Bottom {
+        text-decoration: None;
+        color: black;
+        position: fixed;
+        bottom: 15px;
+    }
+    .Bottom:hover {
+        text-decoration: underline;
+    }
+    #Advertising {
+        left: 20px;
+    }
+    #Business {
+        left: 100px;
+    }
+    #HowSearchWorks {
+        left: 200px;
+    }
+    #CarbonNeutral {
+        right: 450px;
+    }
+    #Privacy {
+        right: 20px;
+    }
+    #Terms {
+        right: 150px;
+    }
+    #Settings {
+        right: 300px;
+    }
+    textarea:focus, input:focus{
+        outline: none;
     }
 </style>
 
@@ -69,7 +111,7 @@
             </a>
             <a class = "HeaderButtons" id = "Gmail"
             href = "https://www.google.com/gmail/about/">
-            Gmail
+                Gmail
             </a>
             <a class = "HeaderButtons" id = "Images" 
             href = "https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">
@@ -77,7 +119,7 @@
             </a>
             <a id = "SignIn"
             href = "https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-            Sign In
+                Sign In
             </a>
         </div>
     </header>
@@ -87,8 +129,39 @@
     <div>
         <img class = "googlelogo" src = "googlelogo_color_272x92dp.png" alt = "Google Logo">
         <form class = "searchline">
-            <label for="name"></label>
-            <input type = "text" id = "name">
+            <label for="search"></label>
+            <input type = "text" id = "search">
         </form>
+    </div>
+    <div class = "navbar">
+        <a class = "Bottom" id = "Advertising"
+        href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">
+            Advertising
+        </a>
+        <a class = "Bottom" id = "Business"
+        href="https://smallbusiness.withgoogle.com/ce/overview2/?subid=us-en-et-g-aw-a-g4sb_test_3a!o2&gmbsrc=us-en_US-et-z-z-gmb-s-z-r~sb-g4sb_test_3a-u&utm_content=g4sb_test_3a&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter#!/">
+            Business
+        </a>
+        <a class = "Bottom" id = "HowSearchWorks"
+        href="https://www.google.com/search/howsearchworks/?fg=1">
+            How Search Works
+        </a>
+        <img class = "Leaf" src = "leaf.png" alt = "Leaf">
+        <a class = "Bottom" id = "CarbonNeutral"
+        href="https://www.google.com/search/howsearchworks/?fg=1">
+            Carbon Neutral since 2007 
+        </a>
+        <a class = "Bottom" id = "Privacy"
+        href="https://www.google.com/search/howsearchworks/?fg=1">
+            Privacy
+        </a>
+        <a class = "Bottom" id = "Terms"
+        href="https://www.google.com/search/howsearchworks/?fg=1">
+            Terms
+        </a>
+        <a class = "Bottom" id = "Settings"
+        href="https://www.google.com/search/howsearchworks/?fg=1">
+            Settings
+        </a>
     </div>
 </body>
